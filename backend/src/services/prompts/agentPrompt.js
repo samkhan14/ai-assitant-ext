@@ -3,9 +3,8 @@ function buildAgentPrompt({
   currentFile,
   selectedCode,
   relatedFiles,
-  context
+  context,
 }) {
-
   return `
 You are an AI coding agent.
 
@@ -57,5 +56,5 @@ RETURN VALID JSON ONLY.
 }
 
 module.exports = {
-  buildAgentPrompt
+  buildAgentPrompt,
 };

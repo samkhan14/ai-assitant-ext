@@ -1,8 +1,4 @@
-function buildAskPrompt({
-  message,
-  context
-}) {
-
+function buildAskPrompt({ message, context }) {
   return `
 You are a senior software engineer and AI coding assistant.
 
@@ -32,5 +28,5 @@ RESPONSE:
 }
 
 module.exports = {
-  buildAskPrompt
+  buildAskPrompt,
 };

@@ -5,5 +5,5 @@ module.exports = {
 
   TEMPERATURE: 0.2,
 
-  MAX_TOKENS: 4096
+  MAX_TOKENS: 4096,
 };

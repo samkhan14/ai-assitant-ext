@@ -1,5 +1,4 @@
 function logInfo(message, data = null) {
-
   console.log("[INFO]", message);
 
   if (data) {
@@ -8,7 +7,6 @@ function logInfo(message, data = null) {
 }
 
 function logError(message, error = null) {
-
   console.error("[ERROR]", message);
 
   if (error) {
@@ -18,5 +16,5 @@ function logError(message, error = null) {
 
 module.exports = {
   logInfo,
-  logError
+  logError,
 };

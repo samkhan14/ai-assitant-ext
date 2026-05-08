@@ -8,9 +8,11 @@ const app = express();
 
 app.use(cors());
 
-app.use(express.json({
-  limit: "10mb"
-}));
+app.use(
+  express.json({
+    limit: "10mb",
+  }),
+);
 
 /**
  * HEALTH CHECK
@@ -18,7 +20,7 @@ app.use(express.json({
 app.get("/", (req, res) => {
   res.json({
     success: true,
-    message: "AI Dev Assistant Backend Running 🚀"
+    message: "AI Dev Assistant Backend Running 🚀",
   });
 });
 
@@ -36,7 +38,7 @@ app.use((err, req, res, next) => {
 
   res.status(500).json({
     success: false,
-    error: "Internal Server Error"
+    error: "Internal Server Error",
   });
 });
 
