@@ -1,0 +1,15 @@
+# Ignore node modules in root, backend, and extension packages
+node_modules/
+backend/node_modules/
+extension/node_modules/
+
+# Build artifacts
+out/
+*.log
+
+# VS Code workspace settings
+.vscode/
+
+# OS files
+.DS_Store
+Thumbs.db
